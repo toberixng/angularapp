@@ -1,4 +1,5 @@
 import { Component, OnInit }  from '@angular/core';
+import { User } from '../../models/User';
 
 @Component({
   selector: 'app-user',
@@ -6,26 +7,25 @@ import { Component, OnInit }  from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 
-export class UserComponent {
+export class UserComponent implements OnInit {
   // properties
-  firstName: string;
-  lastName: string;
-  age:number;
-  address;
+  user: User
 
   // Methods
   constructor(){
-    this.firstName = 'Oluwatobi',
-    this.lastName = 'Fatumo'
-    this.age = 30;
-    this.address = {
+    
+}
+
+ngOnInit(){
+  this.user = {
+    firstName: 'Oluwatobi',
+    lastName:  'Fatumo',
+    age: 30,
+    address: {
     street: '50 main st',
     city: 'Boston',
     state: 'MA'
   }
-  }
-
-  showAge(){
-    return this.age + 5
-  }
+}
+}
 }
