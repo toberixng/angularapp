@@ -8,22 +8,16 @@ import { Component }  from '@angular/core';
 
 export class UserComponent {
   // properties
-  firstName = 'John';
-  lastName = 'Doe';
+  firstName = 'Oluwatobi';
+  lastName = 'Fatumo';
   age = 30;
+  address = {
+    street: '50 main st',
+    city: 'Boston',
+    state: 'MA'
+  }
 
   // Methods
   constructor(){
-    this.sayHello()
-    console.log(this.age);
-    this.hasBirthday();
-  }
-
-  sayHello(){
-    console.log(`hello ${this.firstName}`)
-  }
-
-  hasBirthday() {
-    console.log(this.age += 1)
   }
 }
