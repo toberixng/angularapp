@@ -19,5 +19,10 @@ export class UserComponent {
 
   // Methods
   constructor(){
+    this.showAge()
+  }
+
+  showAge(){
+    return this.age + 5
   }
 }
