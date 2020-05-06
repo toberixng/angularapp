@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from '../../models/User'
 
 @Component({
   selector: 'app-users',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-<<<<<<< HEAD
   users: User[]
   showExtended: boolean = true
-  loaded: boolean = true
+  loades: boolean = true
 
   constructor() { }
 
@@ -59,12 +59,6 @@ export class UsersComponent implements OnInit {
     //     state: 'OY'
     //   }
     // })
-=======
-
-  constructor() { }
-
-  ngOnInit(): void {
->>>>>>> parent of d0f8ad7... array created
   }
 
   addUser(user: User){
