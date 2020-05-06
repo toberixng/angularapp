@@ -9,7 +9,7 @@ import { User } from '../../models/User'
 export class UsersComponent implements OnInit {
   users: User[]
   showExtended: boolean = true
-  loades: boolean = true
+  loaded: boolean = true
 
   constructor() { }
 
