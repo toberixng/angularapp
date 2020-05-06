@@ -8,6 +8,8 @@ import { User } from '../../models/User'
 })
 export class UsersComponent implements OnInit {
   users: User[]
+  showExtended: boolean = true
+  loades: boolean = true
 
   constructor() { }
 
@@ -44,6 +46,22 @@ export class UsersComponent implements OnInit {
         }
       }
     ]
+
+    this.showExtended = false;
+
+    // this.addUser({
+    //   firstName: 'Olayiwola',
+    //   lastName:  'Olayiwomolue',
+    //   age: 25,
+    //   address: {
+    //     street: '10, Mobolaji Bank Anthony way',
+    //     city: 'Ikotun',
+    //     state: 'OY'
+    //   }
+    // })
   }
 
+  addUser(user: User){
+    this.users.push(user)
+  }
 }
